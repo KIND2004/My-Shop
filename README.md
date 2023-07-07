@@ -1,2 +1,2 @@
 # My-Shop
-This is Inventory System Developed in Java
+This is an Inventory System Developed in Java
