@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="mytest" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2efcf201-6d91-444f-a9d9-1c764cbf2bb8">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="password" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="-20" y="0" width="594" height="74" forecolor="#FA130F" backcolor="#0D0A0A" uuid="8ac16b8a-92f9-4f62-93ad-d256342e7b26"/>
+				<textElement textAlignment="Center">
+					<font fontName="Abracadabra91 ttcon" size="42" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dragon Shop]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="29" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="68" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="9" y="17" width="180" height="46" forecolor="#FFFFFF" backcolor="#170D0D" uuid="be4d785d-0a9c-43e8-a1f1-f6f1736356cc"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arno Pro Smbd" size="29" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="189" y="17" width="180" height="46" forecolor="#FFFFFF" backcolor="#170D0D" uuid="f84b1374-d177-4907-9454-8ecd0b56169b"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arno Pro Smbd" size="29" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="369" y="17" width="180" height="46" forecolor="#FFFFFF" backcolor="#170D0D" uuid="10f50c9c-8839-4053-a16c-50b64e6d7c79"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arno Pro Smbd" size="29" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PASSWORD]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="42" splitType="Stretch">
+			<textField>
+				<reportElement x="9" y="7" width="180" height="30" uuid="9976cc8a-6c4f-44c8-b656-f59a36ea4060">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="77190cdd-4f9f-4989-96b5-64009b927056"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="189" y="7" width="179" height="30" uuid="867a57ee-6e45-47eb-8f95-7809c098f693">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1b7d501a-fbe0-4186-94cf-cd1742021a99"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="369" y="7" width="179" height="30" uuid="70c3d5c9-05c0-4b05-bb41-7d67f638ed29">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9a5ccfcb-a475-4f84-82c3-cd42d5850e31"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{password}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
